@@ -6,16 +6,16 @@
 
 nums = [3,1,4,1,5]
 for i in range(len(nums)):
-    print(f"Index {i} -> {nums[i]}")
+    print(f'Element {i} -> {nums[i]}')
 
-max_val = nums[0]
-for i in nums:
-    if i > max_val:
-        max_val = i
-print('Max Value is:',max_val)
+max_num = nums[0]
+for a in range(len(nums)):
+    if nums[a] > max_num:
+        max_num = nums[a]
+print(f'The Maximum Number is {max_num}')
 
 count = 0
-for i in nums:
-    if i == 1:
+for c in range(len(nums)):
+    if nums[c] == 1:
         count+=1
-print('1 has appeared:',count,'times')
+print(f'1 has appeared: {count} times')
